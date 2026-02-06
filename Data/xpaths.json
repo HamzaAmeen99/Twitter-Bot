@@ -1,0 +1,14 @@
+{
+  "search_page": {
+    "latest_tab_xpath": "//span[text()='Latest']/ancestor::a"
+  },
+  "tweet_page": {
+    "first_tweet_xpath": "(//article[@data-testid='tweet'])[1]"
+  },
+  "detailed_tweet_page": {
+    "like_button_css": "button[data-testid='like']",
+    "comment_box_css": "div[data-testid='tweetTextarea_0'][contenteditable='true']",
+    "reply_button_css": "button[data-testid='tweetButtonInline']",
+    "tweet_content_css": "div[data-testid='tweetText']"
+  }
+}

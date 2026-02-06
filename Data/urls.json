@@ -1,0 +1,14 @@
+{
+    "twitter": {
+        "login": {
+            "first_login": "https://x.com/i/flow/login",
+            "login": "https://x.com/"
+        },
+        "posts": [
+            "https://x.com/search?q=%22deen%22&src=typed_query&f=live"
+        ],
+        "api_urls": {
+            "openrouter": "https://openrouter.ai/api/v1"
+        }
+    }
+}
