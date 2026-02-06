@@ -1,12 +1,12 @@
 {
     "globalnews2183": {
-        "has_cookies": true,
-        "username": "globalnews2183",
-        "password": "Lahore2183"
+        "has_cookies": false,
+        "username": "[EMAIL_ADDRESS]",
+        "password": "[PASSWORD]"
     },
     "another_account": {
         "has_cookies": false,
-        "username": "another_user",
-        "password": "AnotherPassword123"
+        "username": "[EMAIL_ADDRESS]",
+        "password": "[PASSWORD]"
     }
 }
