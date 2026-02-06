@@ -1,78 +1,86 @@
-🐦 Twitter (X) Automation Bot
-A robust Python-based automation tool built with Selenium to manage Twitter (X) interactions. This bot can automate logging in, searching for tweets via keywords, and performing actions like liking and retweeting.
+# 🐦 Twitter (X) Automation Bot
+> **A high-performance Selenium automation tool for managing Twitter (X) engagement.**
 
-🚀 Features
-Automated Authentication: Securely logs into your Twitter account.
+[![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Selenium](https://img.shields.io/badge/library-Selenium-green.svg)](https://www.selenium.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/HamzaAmeen99/Twitter-Bot/graphs/commit-activity)
 
-Keyword Targeting: Searches for specific hashtags or phrases.
+---
 
-Engagement Automation: Automatically likes and retweets relevant content.
+## 🚀 Project Overview
+This repository contains a Python-based automation script that uses **Selenium WebDriver** to interact with Twitter. Whether you're looking to automate engagement or learn browser automation, this bot provides a solid foundation for navigating the Twitter (X) DOM efficiently.
 
-Stealth Mode: Incorporates random delays and human-like behavior to reduce detection.
+### ✨ Key Features
+* **Secure Login**: Automates the login flow, including handling secondary prompts.
+* **Keyword Extraction**: Discovers tweets based on specific hashtags or search queries.
+* **Auto-Engagement**: Likes and retweets posts to increase account visibility.
+* **Smart Delays**: Built-in randomized sleep timers to mimic human behavior and minimize detection risks.
+* **Headless Support**: Can be configured to run in the background without a browser UI.
 
-Headless Mode: Option to run the bot without a visible browser window.
+---
 
-🛠️ Tech Stack
-Language: Python 3.x
+## 🌍 Environment Setup (Crucial)
 
-Browser Automation: Selenium WebDriver
+To run this bot, the **ChromeDriver** must be installed and added to your operating system's **Environment Variables (PATH)**. 
 
-Web Driver: ChromeDriver
+### 1. Download ChromeDriver
+1. Check your Google Chrome version (Settings > About Chrome).
+2. Download the matching driver from the [Official Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/) page.
 
-🌍 Environment Setup (Important)
-For the bot to run, your system needs to know where the ChromeDriver is located.
+### 2. Add to System PATH
+#### **For Windows Users:**
+1. Extract `chromedriver.exe` to a permanent folder (e.g., `C:\WebDriver\`).
+2. Search for **"Edit the system environment variables"** in the Windows Start menu.
+3. Click **Environment Variables** > Find **Path** in 'System Variables' > Click **Edit**.
+4. Click **New** and add the folder path: `C:\WebDriver\`.
+5. **Restart** your terminal or VS Code for the changes to take effect.
 
-1. Download the Driver
-Download the version that matches your Google Chrome version from the Official Chrome for Testing page.
+#### **For macOS/Linux Users:**
+1. Move the driver to your local bin:
+   ```bash
+   sudo mv chromedriver /usr/local/bin/
+2.Grant execution permissions:
+  ```bash
+  chmod +x /usr/local/bin/chromedriver
+```
+# 🛠️ Installation & Usage
 
-2. Add to OS Environment Variables
-You must add the folder containing your chromedriver to your system's PATH variable so Selenium can find it automatically:
+---
 
-Windows:
-Move chromedriver.exe to a permanent folder (e.g., C:\WebDriver\).
+### 📦 Step 1: Clone the Repository
 
-Open the Start Menu, search for "Edit the system environment variables", and open it.
-
-Click Environment Variables.
-
-Under System Variables, find Path and click Edit.
-
-Click New and paste the folder path (C:\WebDriver\).
-
-Click OK on all windows and restart your Terminal/CMD.
-
-macOS / Linux:
-Move the driver to /usr/local/bin:
-
-Bash
-sudo mv chromedriver /usr/local/bin/
-Give it execution permissions:
-
-Bash
-chmod +x /usr/local/bin/chromedriver
-⚙️ Installation
-Clone the Repo
-
-Bash
+```bash
 git clone https://github.com/HamzaAmeen99/Twitter-Bot.git
 cd Twitter-Bot
-Install Requirements
+```
 
-Bash
+### 🐍 Step 2: Install Dependencies
+
+Ensure you have Python installed, then run:
+```bash
 pip install -r requirements.txt
-Configuration Update your credentials and search parameters in the script (or your .env file):
+```
 
-Python
-# Example configuration
-username = "YOUR_USERNAME"
-password = "YOUR_PASSWORD"
-query = "#Python #Automation"
-🚀 Usage
-Simply run the main script to start the automation:
+### ⚙️ Step 3: Configuration
 
-Bash
+Open the main script and input your credentials in accounts.json file:
+
+# Configuration Example
+```python
+USERNAME = "your_twitter_handle"
+PASSWORD = "your_secret_password"
+```
+## 🏃 Step 4: Run the Bot
 python main.py
-⚠️ Disclaimer
-This project is for educational purposes only. Automating Twitter accounts using Selenium may violate Twitter's Terms of Service. Use this tool at your own risk; the developer is not responsible for any account suspensions.
 
-Developed with ❤️ by Hamza Ameen
+# ⚠️ Safety & Disclaimer
+
+Use this tool at your own risk. Automating Twitter accounts can lead to permanent bans if it violates Twitter's Terms of Service.
+
+This project is strictly for **educational purposes only.**
+The developer is not responsible for any misuse or account restrictions.
+
+# 👨‍💻 Author
+
+Developed with ❤️ by [Hamza Ameen](https://www.linkedin.com/in/hamza-ameen07/)
